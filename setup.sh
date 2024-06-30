@@ -1,5 +1,6 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install sl
-alias sl="/usr/games/sl"
+sudo apt-get install -y sl
+echo 'alias sl="/usr/games/sl"' >> ~/.bashrc
+source ~/.bashrc
